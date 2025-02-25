@@ -1,0 +1,21 @@
+[project]
+name = "torch-visualizations"
+version = "0.1.0"
+description = "Visualization for PyTorch internals"
+readme = "README.rst"
+requires-python = ">=3.11"
+dependencies = [
+    "ipywidgets>=8.1.5",
+    "torch>=2.6.0",
+    "torch-geometric>=2.6.1",
+    "torchviz>=0.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.3.5",
+    "jupytext>=1.16.7",
+]
+
+[tool.jupytext]
+formats = "ipynb,py:percent"
